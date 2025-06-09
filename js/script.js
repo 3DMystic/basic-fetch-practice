@@ -5,8 +5,8 @@ const getUsersExpbtn = document.getElementById('users-exp');
 const resetbtn = document.getElementById('reset');
 const divsContainer = document.getElementById('container');
 
-getUsersbtn.addEventListener('click', () => getData("https://raw.githubusercontent.com/dan-collins-dev/dummy-data-fetching-repo/main/data/users.json"));
-getUsersExpbtn.addEventListener('click', () => getData("https://raw.githubusercontent.com/dan-collins-dev/dummy-data-fetching-repo/main/data/users.json", 10));
+getUsersbtn.addEventListener('click', () => getData("https://dan-collins-dev.github.io/dummy-data-fetching-repo/data/users.json"));
+getUsersExpbtn.addEventListener('click', () => getData("https://dan-collins-dev.github.io/dummy-data-fetching-repo/data/users.json", 10));
 
 resetbtn.addEventListener('click', () => {divsContainer.innerHTML = ""})
 async function getData(url, exp = null) {
